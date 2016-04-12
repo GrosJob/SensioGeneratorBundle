@@ -18,14 +18,14 @@ determine the bundle name, location, configuration format and default structure:
 
 .. code-block:: bash
 
-    $ php app/console generate:doctrine:entity
+    $ php bin/console generate:doctrine:entity
 
 The command can be run in a non-interactive mode by using the ``--no-interaction``
 option, but don't forget to pass all needed options:
 
 .. code-block:: bash
 
-    $ php app/console generate:doctrine:entity --no-interaction --entity=AcmeBlogBundle:Post --fields="title:string(100) body:text" --format=xml
+    $ php bin/console generate:doctrine:entity --no-interaction --entity=AcmeBlogBundle:Post --fields="title:string(100) body:text" --format=xml
 
 Available Options
 -----------------
@@ -37,7 +37,7 @@ Available Options
 
     .. code-block:: bash
 
-        $ php app/console generate:doctrine:entity --entity=AcmeBlogBundle:Post
+        $ php bin/console generate:doctrine:entity --entity=AcmeBlogBundle:Post
 
 ``--fields``
     The list of fields to generate in the entity class:
@@ -61,4 +61,4 @@ Available Options
 
     .. code-block:: bash
 
-        $ php app/console generate:doctrine:entity --format=annotation
+        $ php bin/console generate:doctrine:entity --format=annotation
